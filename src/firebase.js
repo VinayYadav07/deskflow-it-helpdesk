@@ -3,15 +3,16 @@ import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
+// firebase config
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
-  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
+  apiKey: "AIzaSyAbb5xXNhLfqmlj_l3P2zETNHj9Yw06Gso",
+  authDomain: "deskflow-c8380.firebaseapp.com",
+  databaseURL: "https://deskflow-c8380-default-rtdb.firebaseio.com",
+  projectId: "deskflow-c8380",
+  storageBucket: "deskflow-c8380.firebasestorage.app",
+  messagingSenderId: "557874462409",
+  appId: "1:557874462409:web:c2d7e3f15b6fcd64609718",
+  measurementId: "G-E91T5X1MY6",
 };
 
 // Start Firebase
