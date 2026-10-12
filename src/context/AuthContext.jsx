@@ -55,6 +55,14 @@ const AuthProvider = ({ children }) => {
             name: data.name || fbUser.displayName || fbUser.email,
             role: data.role || "employee",
           });
+        } else {
+          // profile nahi mila to bana do
+          await setDoc(doc(db, "users", fbUser.uid), {
+            name: fbUser.displayName || fbUser.email,
+            email: fbUser.email,
+            role: "employee",
+            createdAt: serverTimestamp(),
+          });
         }
       } catch (err) {
         console.error("Could not load profile:", err);
