@@ -1,4 +1,4 @@
-DeskFlow
+# DeskFlow
 
 DeskFlow is an IT helpdesk and asset management app for small offices.
 
@@ -6,50 +6,78 @@ I got this idea from my work as an IT Executive. In offices, employees often rep
 
 So I made DeskFlow to keep tickets and company assets in one place.
 
-Features
+## Features
 
-Employee and Admin login
+- Employee and Admin login
+- Create IT tickets
+- Check ticket status
+- Add comments
+- Manage company assets
+- Assign assets to employees
+- Check warranty details
+- Admin dashboard
+- Real-time updates
+- Mobile responsive
 
-Create IT tickets
+## Tech Used
 
-Check ticket status
+- React JS
+- Firebase Authentication
+- Firestore
+- React Router
+- CSS
+- Vercel
 
-Add comments
+## Demo Login
 
-Manage company assets
+You can use these accounts to test the app.
 
-Assign assets to employees
+**Admin**
 
-Check warranty details
+- Email: admin@demo.com
+- Password: your admin password
 
-Admin dashboard
+**Employee**
 
-Real-time updates
+- Email: employee@demo.com
+- Password: your employee password
 
-Mobile responsive
+## How to Run Locally
 
-Tech Used
+1. Clone the repo
 
-React JS
+```
+git clone https://github.com/VinayYadav07/deskflow-it-helpdesk.git
+```
 
-Firebase
+2. Go to the project folder
 
-Firestore
+```
+cd deskflow-it-helpdesk
+```
 
-React Router
+3. Install packages
 
-CSS
+```
+npm install
+```
 
-Vercel
+4. Add your own Firebase project details in `src/firebase.js`
 
-Links
+5. Start the app
 
-Live Demo: Add your link
+```
+npm run dev
+```
 
-Demo Video: Add your link
+6. Open http://localhost:5173 in the browser
 
-GitHub: Add your link
+## Links
 
-Author
+- Live Demo: https://deskflow-it-helpdesk.vercel.app/
+- Demo Video: Add your link
+- GitHub: https://github.com/VinayYadav07/deskflow-it-helpdesk
+
+## Author
 
 Vinay Kumar Yadav
