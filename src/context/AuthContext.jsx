@@ -32,7 +32,7 @@ const AuthProvider = ({ children }) => {
         return;
       }
 
-      // Show the user immediately
+      // user ko turant dikhao
       setUser({
         uid: fbUser.uid,
         email: fbUser.email,
@@ -42,7 +42,7 @@ const AuthProvider = ({ children }) => {
 
       setLoading(false);
 
-      // Load extra profile information in the background
+      // firestore se profile lao
       try {
         const userDoc = await getDoc(doc(db, "users", fbUser.uid));
 
